@@ -865,7 +865,7 @@
         command: cat /etc/securetty
         changed_when: no
         become: yes
-        register: rhel_08_5_5_audit
+        register: rhel_08_5_5_6_audit
         when: rhel8cis_securetty_check.stat.exists
       - debug:
             msg:
